@@ -1,0 +1,51 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0a0a23, #000000);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* CONTENEDOR */
+.container {
+  margin-top: 120px;
+}
+
+/* TITULO */
+h1 {
+  font-size: 60px;
+  color: #00d4ff;
+  text-shadow: 0 0 20px #00d4ff;
+}
+
+/* SUBTITULO */
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* BOTON */
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+}
