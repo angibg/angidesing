@@ -12,3 +12,6 @@ function cambiarTexto() {
 window.onload = function() {
   console.log("Página cargada correctamente");
 }
+function irServicios() {
+  document.getElementById("servicios").scrollIntoView();
+}
