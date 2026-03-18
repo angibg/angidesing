@@ -3,125 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Angi Desing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <h1>Angi Desing</h1>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Angi Desing</h2>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>creando ideas</title>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <style>
-    body {
-      background-color: #0a0a23;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-
-    h1 {
-      font-size: 50px;
-      color: #00d4ff;
-    }
-  </style>
-
-</head>
-<body>
-
-  <h1>lo mejor de lo mejor</h1>
-
-</body>
-</html>
-<button onclick="mensaje()">Entrar</button>
-
-<script>
-  function mensaje() {
-    alert("Bienvenido a Angi Desing 🚀");
-  }
-</script>
-<script src="script.js"></script>
-<body>
-
-  <div class="container">
+  <!-- HERO -->
+  <section class="hero">
     <h1 id="titulo">Angi Desing</h1>
     <p>Diseño creativo y profesional</p>
 
     <button onclick="mensaje()">Entrar</button>
     <button onclick="cambiarTexto()">Cambiar texto</button>
-  </div>
+    <button onclick="irServicios()">Ver servicios</button>
+  </section>
 
+  <!-- SERVICIOS -->
+  <section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Diseño Web</h3>
+        <p>Páginas modernas y atractivas</p>
+      </div>
+
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Identidad visual para tu marca</p>
+      </div>
+
+      <div class="card">
+        <h3>Redes Sociales</h3>
+        <p>Contenido creativo y profesional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Contáctanos para más información</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Angi Desing</p>
+  </footer>
+
+  <!-- JS -->
   <script src="script.js"></script>
 
 </body>
-<link rel="stylesheet" href="styles.css">
-<body>
-
-  <div class="container">
-    <h1>Angi Desing</h1>
-    <p>Diseño creativo y profesional</p>
-
-    <button onclick="mensaje()">Entrar</button>
-  </div>
-
-  <script>
-    function mensaje() {
-      alert("Bienvenido a Angi Desing 🚀");
-    }
-  </script>
-
-</body>
-<header>
-  <nav class="navbar">
-    <h2 class="logo">Angi Desing</h2>
-
-    <ul class="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<section id="servicios" style="margin-top: 200px;">
-  <h2>Servicios</h2>
-  <p>Diseño gráfico, branding y páginas web</p>
-</section>
-
-<section id="contacto" style="margin-top: 200px;">
-  <h2>Contacto</h2>
-  <p>Contáctanos para más información</p>
-</section>
-<section id="servicios" class="servicios">
-  <h2>Nuestros Servicios</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Diseño Web</h3>
-      <p>Páginas modernas y atractivas</p>
-    </div>
-
-    <div class="card">
-      <h3>Branding</h3>
-      <p>Identidad visual para tu marca</p>
-    </div>
-
-    <div class="card">
-      <h3>Redes Sociales</h3>
-      <p>Contenido creativo y profesional</p>
-    </div>
-  </div>
-</section>
-<footer>
-  <p>© 2026 Angi Desing - Todos los derechos reservados</p>
-</footer>
-<section class="hero">
-  <h1>Bienvenido a Angi Desing</h1>
-  <p>Diseño creativo que impulsa tu marca</p>
-  <button>Ver servicios</button>
-</section>
-<button onclick="irServicios()">Ver servicios</button>
+</html>

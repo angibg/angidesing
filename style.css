@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
 /* BODY */
 body {
   background: linear-gradient(135deg, #0a0a23, #000000);
@@ -13,42 +18,6 @@ body {
   text-align: center;
 }
 
-/* CONTENEDOR */
-.container {
-  margin-top: 120px;
-}
-
-/* TITULO */
-h1 {
-  font-size: 60px;
-  color: #00d4ff;
-  text-shadow: 0 0 20px #00d4ff;
-}
-
-/* SUBTITULO */
-p {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #ccc;
-}
-
-/* BOTON */
-button {
-  margin-top: 25px;
-  padding: 12px 25px;
-  font-size: 18px;
-  background: #00d4ff;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* HOVER */
-button:hover {
-  background: #0099cc;
-  transform: scale(1.1);
-}
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -56,6 +25,10 @@ button:hover {
   align-items: center;
   background: #111;
   padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* LOGO */
@@ -78,16 +51,47 @@ button:hover {
   transition: 0.3s;
 }
 
-/* HOVER */
 .menu li a:hover {
   color: #00d4ff;
 }
-html {
-  scroll-behavior: smooth;
+
+/* HERO */
+.hero {
+  margin-top: 120px;
 }
+
+.hero h1 {
+  font-size: 60px;
+  color: #00d4ff;
+  text-shadow: 0 0 20px #00d4ff;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* BOTONES */
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+}
+
+/* SERVICIOS */
 .servicios {
   margin-top: 100px;
-  text-align: center;
 }
 
 .cards {
@@ -97,12 +101,16 @@ html {
   margin-top: 30px;
 }
 
+/* CARD */
 .card {
   background: #111;
   padding: 20px;
   border-radius: 15px;
   width: 200px;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 1s forwards;
 }
 
 .card:hover {
@@ -110,12 +118,28 @@ html {
   background: #00d4ff;
   color: black;
 }
+
+/* ANIMACION */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CONTACTO */
+#contacto {
+  margin-top: 100px;
+}
+
+/* FOOTER */
 footer {
   margin-top: 100px;
   padding: 20px;
+  background: #111;
 }
 
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .navbar {
@@ -133,30 +157,8 @@ footer {
     align-items: center;
   }
 
-}
-.hero {
-  margin-top: 100px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 50px;
-  color: #00d4ff;
-}
-
-.hero p {
-  margin-top: 10px;
-  color: #ccc;
-}
-.card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: aparecer 1s forwards;
-}
-
-@keyframes aparecer {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .hero h1 {
+    font-size: 40px;
   }
+
 }
